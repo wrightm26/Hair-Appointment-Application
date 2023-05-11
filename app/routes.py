@@ -9,6 +9,14 @@ def index():
 def login():
     return render_template('login.html')
 
-@app.route('/services')
-def services():
-    return render_template('services.html')
+@app.route('/locservices')
+def locservices():
+    return render_template('locservices.html')
+
+@app.route('/braidservices')
+def braidservices():
+    return render_template('braidservices.html')
+
+@app.route('/gallery')
+def braidservices():
+    return render_template('gallery.html')

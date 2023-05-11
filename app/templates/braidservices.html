@@ -1,9 +1,9 @@
 {% extends 'base.html' %}
 
-{% block title %} Home {% endblock %}
+{% block title %} Braid Services {% endblock %}
 
 {% block header %}
-    <h1 class="text-success fw-lighter fs-1" id="services">Services</h1>
+    <h1 class="text-success fw-lighter fs-1 border-bottom border-success-subtle pb-5" id="services"> Braid Services</h1>
 {% endblock %}
 
 {% block content %}
@@ -12,82 +12,106 @@
             <table class="table table-success table-striped" id="table">
                 <thead>
                     <tr>
-                      <th scope="col" class="fw-lighter p-4">Service</th>
-                      <th scope="col" class="fw-lighter p-4">Price</th>
-                      <th scope="col" class="fw-lighter p-4">Description</th>
-                      <th scope="col" class="fw-lighter p-4">BOOK</th>
+                      <th scope="col" class="fw-bolder p-4 fs-5">Service</th>
+                      <th scope="col" class="fw-bolder p-4 fs-5">Price</th>
+                      <th scope="col" class="fw-bolder p-4 fs-5">Description</th>
+                      <th scope="col" class="fw-bolder p-4 fs-5">BOOK</th>
                     </tr>
-                  </thead>
+                </thead>
                 <tbody>
                     <tr >
-                        <td class="p-4 fw-lighter fst-italic">Retwist Locs</td>
+                        <td class="p-4 fw-lighter ">Cornrow Style</td>
                         <td class="p-4 fw-lighter fst-italic">$50</td>
-                        <td class="p-4 fst-italic fw-lighter">Regular retwist, <strong>DOES NOT</strong> include wash or styling</td>
+                        <td class="p-4 fst-italic fw-lighter">Hair is included. <strong>Please come with your hair washed!</strong></td>
                         <td class="pt-4"><button type="button" class="btn btn-outline-success bg-light p-2 fw-bold mb-3">BOOK IT</button></td>
                     </tr>
+                    <thead>
+                        <tr>
+                          <th scope="col" class="fw-bold p-4 fs-5">KNOTLESS BRAIDS:</th>
+                          <th scope="col" class="fw-bolder p-4 fs-5"></th>
+                          <th scope="col" class="fw-bolder p-4 fs-5"></th>
+                          <th scope="col" class="fw-bolder p-4 fs-5"></th>
+                        </tr>
+                    </thead>
                     <tr >
-                        <td class="p-4 fw-lighter fst-italic">Retwist Locs + Wash</td>
-                        <td class="p-4 fw-lighter fst-italic">$60</td>
-                        <td class="p-4 fst-italic fw-lighter"> Wash and retwist,  <strong>DOES NOT</strong> include styling</td>
-                        <td class="pt-4"><button type="button" class="btn btn-outline-success bg-light p-2 fw-bold mb-3">BOOK IT</button></td>
-                    </tr>
-                    <tr >
-                        <td class="p-4 fw-lighter fst-italic">Retwist Locs + Wash + Styling</td>
-                        <td class="p-4 fw-lighter fst-italic">$70</td>
-                        <td class="p-4 fst-italic fw-lighter">Includes wash, retwist and styling</td>
-                        <td class="pt-4"><button type="button" class="btn btn-outline-success bg-light p-2 fw-bold mb-3">BOOK IT</button></td>
-                    </tr>
-                    <tr >
-                        <td class="p-4 fw-lighter fst-italic">Small Knotless Braids</td>
+                        <td class="p-4 fw-lighter">Small Knotless Braids</td>
                         <td class="p-4 fw-lighter fst-italic">$180</td>
                         <td class="p-4 fst-italic fw-lighter">Hair is included. <strong>Please come with your hair washed!</strong></td>
                         <td class="pt-4"><button type="button" class="btn btn-outline-success bg-light p-2 fw-bold mb-3">BOOK IT</button></td>
                     </tr>
                     <tr >
-                        <td class="p-4 fw-lighter fst-italic">Medium Knotless Braids</td>
-                        <td class="p-4 fw-lighter fst-italic">$165</td>
-                        <td class="p-4 fst-italic fw-lighter">Hair is included. <strong>Please come with your hair washed!</strong></td>
-                        <td class="pt-4"><button type="button" class="btn btn-outline-success bg-light p-2 fw-bold mb-3">BOOK IT</button></td>
-                    </tr>
-                    <tr >
-                        <td class="p-4 fw-lighter fst-italic">Large Knotless Braids</td>
-                        <td class="p-4 fw-lighter fst-italic">$150</td>
-                        <td class="p-4 fst-italic fw-lighter">Hair is included. <strong>Please come with your hair washed!</strong></td>
-                        <td class="pt-4"><button type="button" class="btn btn-outline-success bg-light p-2 fw-bold mb-3">BOOK IT</button></td>
-                    </tr>
-                    <tr >
-                        <td class="p-4 fw-lighter fst-italic">Small Box Braids</td>
-                        <td class="p-4 fw-lighter fst-italic">$120</td>
-                        <td class="p-4 fst-italic fw-lighter">Hair is included. <strong>Please come with your hair washed!</strong></td>
-                        <td class="pt-4"><button type="button" class="btn btn-outline-success bg-light p-2 fw-bold mb-3">BOOK IT</button></td>
-                    </tr>
-                    <tr >
-                        <td class="p-4 fw-lighter fst-italic">Medium Box Braids</td>
-                        <td class="p-4 fw-lighter fst-italic">$105</td>
-                        <td class="p-4 fst-italic fw-lighter">Hair is included. <strong>Please come with your hair washed!</strong></td>
-                        <td class="pt-4"><button type="button" class="btn btn-outline-success bg-light p-2 fw-bold mb-3">BOOK IT</button></td>
-                    </tr>
-                    <tr >
-                        <td class="p-4 fw-lighter fst-italic">Large Box Braids</td>
-                        <td class="p-4 fw-lighter fst-italic">$90</td>
-                        <td class="p-4 fst-italic fw-lighter">Hair is included. <strong>Please come with your hair washed!</strong></td>
-                        <td class="pt-4"><button type="button" class="btn btn-outline-success bg-light p-2 fw-bold mb-3">BOOK IT</button></td>
-                    </tr>
-                    <tr >
-                        <td class="p-4 fw-lighter fst-italic">Small Knotless Goddess Braids</td>
+                        <td class="p-4 fw-lighter ">Small Knotless GODDESS Braids</td>
                         <td class="p-4 fw-lighter fst-italic">$210</td>
                         <td class="p-4 fst-italic fw-lighter">Hair is included. <strong>Please come with your hair washed!</strong></td>
                         <td class="pt-4"><button type="button" class="btn btn-outline-success bg-light p-2 fw-bold mb-3">BOOK IT</button></td>
                     </tr>
                     <tr >
-                        <td class="p-4 fw-lighter fst-italic">Small Goddess Braids</td>
-                        <td class="p-4 fw-lighter fst-italic">$185</td>
+                        <td class="p-4 fw-lighter ">Medium Knotless Braids</td>
+                        <td class="p-4 fw-lighter fst-italic">$165</td>
                         <td class="p-4 fst-italic fw-lighter">Hair is included. <strong>Please come with your hair washed!</strong></td>
                         <td class="pt-4"><button type="button" class="btn btn-outline-success bg-light p-2 fw-bold mb-3">BOOK IT</button></td>
                     </tr>
                     <tr >
-                        <td class="p-4 fw-lighter fst-italic">Cornrow Style</td>
-                        <td class="p-4 fw-lighter fst-italic">$50</td>
+                        <td class="p-4 fw-lighter ">Medium Knotless GODDESS Braids</td>
+                        <td class="p-4 fw-lighter fst-italic">$195</td>
+                        <td class="p-4 fst-italic fw-lighter">Hair is included. <strong>Please come with your hair washed!</strong></td>
+                        <td class="pt-4"><button type="button" class="btn btn-outline-success bg-light p-2 fw-bold mb-3">BOOK IT</button></td>
+                    </tr>
+                    <tr >
+                        <td class="p-4 fw-lighter ">Large Knotless Braids</td>
+                        <td class="p-4 fw-lighter fst-italic">$150</td>
+                        <td class="p-4 fst-italic fw-lighter">Hair is included. <strong>Please come with your hair washed!</strong></td>
+                        <td class="pt-4"><button type="button" class="btn btn-outline-success bg-light p-2 fw-bold mb-3">BOOK IT</button></td>
+                    </tr>
+                    <tr >
+                        <td class="p-4 fw-lighter ">Large Knotless GODDESS Braids</td>
+                        <td class="p-4 fw-lighter fst-italic">$180</td>
+                        <td class="p-4 fst-italic fw-lighter">Hair is included. <strong>Please come with your hair washed!</strong></td>
+                        <td class="pt-4"><button type="button" class="btn btn-outline-success bg-light p-2 fw-bold mb-3">BOOK IT</button></td>
+                    </tr>
+                </tbody>
+                <thead>
+                    <tr>
+                      <th scope="col" class="fw-bold p-4 fs-5">BOX BRAIDS:</th>
+                      <th scope="col" class="fw-bolder p-4 fs-5"></th>
+                      <th scope="col" class="fw-bolder p-4 fs-5"></th>
+                      <th scope="col" class="fw-bolder p-4 fs-5"></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr >
+                        <td class="p-4 fw-lighter ">Small Box Braids</td>
+                        <td class="p-4 fw-lighter fst-italic">$120</td>
+                        <td class="p-4 fst-italic fw-lighter">Hair is included. <strong>Please come with your hair washed!</strong></td>
+                        <td class="pt-4"><button type="button" class="btn btn-outline-success bg-light p-2 fw-bold mb-3">BOOK IT</button></td>
+                    </tr>
+                    <tr >
+                        <td class="p-4 fw-lighter">Small GODDESS Box Braids</td>
+                        <td class="p-4 fw-lighter fst-italic">$150</td>
+                        <td class="p-4 fst-italic fw-lighter">Hair is included. <strong>Please come with your hair washed!</strong></td>
+                        <td class="pt-4"><button type="button" class="btn btn-outline-success bg-light p-2 fw-bold mb-3">BOOK IT</button></td>
+                    </tr>
+                    <tr >
+                        <td class="p-4 fw-lighter ">Medium Box Braids</td>
+                        <td class="p-4 fw-lighter fst-italic">$105</td>
+                        <td class="p-4 fst-italic fw-lighter">Hair is included. <strong>Please come with your hair washed!</strong></td>
+                        <td class="pt-4"><button type="button" class="btn btn-outline-success bg-light p-2 fw-bold mb-3">BOOK IT</button></td>
+                    </tr>
+                    <tr >
+                        <td class="p-4 fw-lighter">Medium GODDESS Box Braids</td>
+                        <td class="p-4 fw-lighter fst-italic">$135</td>
+                        <td class="p-4 fst-italic fw-lighter">Hair is included. <strong>Please come with your hair washed!</strong></td>
+                        <td class="pt-4"><button type="button" class="btn btn-outline-success bg-light p-2 fw-bold mb-3">BOOK IT</button></td>
+                    </tr>
+                    <tr >
+                        <td class="p-4 fw-lighter ">Large Box Braids</td>
+                        <td class="p-4 fw-lighter fst-italic">$90</td>
+                        <td class="p-4 fst-italic fw-lighter">Hair is included. <strong>Please come with your hair washed!</strong></td>
+                        <td class="pt-4"><button type="button" class="btn btn-outline-success bg-light p-2 fw-bold mb-3">BOOK IT</button></td>
+                    </tr>
+                    <tr >
+                        <td class="p-4 fw-lighter">Large GODDESS Box Braids</td>
+                        <td class="p-4 fw-lighter fst-italic">$120</td>
                         <td class="p-4 fst-italic fw-lighter">Hair is included. <strong>Please come with your hair washed!</strong></td>
                         <td class="pt-4"><button type="button" class="btn btn-outline-success bg-light p-2 fw-bold mb-3">BOOK IT</button></td>
                     </tr>

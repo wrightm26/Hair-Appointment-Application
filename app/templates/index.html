@@ -2,17 +2,28 @@
 
 {% block title %} Home {% endblock %}
 
+{% block header %}
+    <h1 class="text-success fw-lighter fs-1 border-bottom border-success-subtle pb-5" id="services">klassy braids</h1>
+{% endblock %}
+
 {% block content %}
     <div class="row">
-        <div class="col-5 text-center fs-5 border border-success rounded p-5 ms-5 fw-lighter">
+        <div class="col-5 text-center fs-5 border border-success-subtle rounded p-5 ms-5 fw-lighter">
             <p>Thank you for visiting my hair page! I can not wait to provide excellent services to you! You can access all the services I provide using the Service link above. You can book by creating an account or you can book as a guest. I look forward to seeing you!</p>
         </div>
         <div class="col-5 ms-5">
-            <h1 class="fw-lighter mb-4 text-success" id="reviews">Reviews:</h1>
-            <div class="card border border-success">
+            <div class="row justify-content-between">
+                <div class="col-6">
+                    <h1 class="fw-lighter mb-4 text-success ms-5" id="reviews">Reviews:</h1>
+                </div>
+                <div class="col-6">
+                    <button type="button" class="btn btn-outline-success ms-5">SUBMIT A REVIEW</button>
+                </div>
+            </div>
+            <div class="card border border border-success-subtle">
                 <div class="card-body">
                 <h5 class="card-title"></h5>
-                <p class="card-text text-center fs-5 p-3 fw-lighter">The services were amazing! 10 / 10 recommend!</p>
+                <p class="card-text text-center fs-5 p-3 fw-lighter ">The services were amazing! 10 / 10 recommend!</p>
                 </div>
             </div>
         </div>
