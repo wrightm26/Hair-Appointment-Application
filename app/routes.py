@@ -1,6 +1,6 @@
 from app import app
 from flask import render_template
-from app.form import SignUpForm
+from app.form import SignUpForm, LogInForm
 
 @app.route('/')
 def index():
@@ -8,15 +8,20 @@ def index():
 
 @app.route('/login', methods=['GET'])
 def login():
-    return render_template('login.html')
+    form = LogInForm()
+    if form.validate_on_submit():
+        username = form.username.data
+        password = form.password.data
+        return render_template('index.html')
+    return render_template('login.html', form=form)
 
 @app.route('/signup', methods=['GET', 'POST'])
 def signup():
     form = SignUpForm()
     if form.validate_on_submit():
         full_name = form.full_name.data
-        usernames = form.username.data
-        passwords = form.password.data
+        username = form.username.data
+        password = form.password.data
         numbers = form.password.data
         email = form.email.data
         return render_template('login.html')

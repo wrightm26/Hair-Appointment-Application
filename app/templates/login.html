@@ -10,12 +10,23 @@
 
 {% block content %}
     <div class="row justify-content-center">
-        <div class="col-10">
-            <div class="card mb-5 border border-white ps-5">
+        <div class="col-6">
+            <div class="card mb-5 border border-success-subtle p-5">
                 <div class="card-body">
                     <form action="" method="post">
+                        {{ form.csrf_token }}
+                        <div class="row">
+                            <h6 class="mb-4 text-center text-success fw-lighter">Don't have an account? <a class="text-secondary fw-lighter " href="/signup">Register</a></h6>
 
-                        </div>
+                            {{ form.username.label (class="text-success fw-lighter") }}
+                            {{ form.username(class="form-control border border-success-subtle mb-3") }}
+
+                            {{ form.password.label (class="text-success fw-lighter") }}
+                            {{ form.password(class="form-control border border-success-subtle mb-3") }}
+
+                            <div class="row justify-content-center">
+                                {{ form.submit(class="btn btn-success w-50 m-3 p-3 justify-content-center") }}
+                            </div>
                     </form>
                 </div>
             </div>
