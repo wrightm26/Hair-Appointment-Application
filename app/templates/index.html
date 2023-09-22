@@ -3,29 +3,95 @@
 {% block title %} Home {% endblock %}
 
 {% block header %}
-    <h1 class="text-success fw-lighter fs-1 border-bottom border-3 border-success-subtle pb-5" id="services">Home</h1>
+    <h1 class="text-dark fw-lighter fs-1 ms-5 me-5" id="services">Thank You for Choosing KlassyBraids</h1>
+
 {% endblock %}
 
 {% block content %}
-    <div class="row">
-        <div class="col-5 text-center fs-5 border border-success-subtle rounded p-5 ms-5 fw-lighter">
-            <p>Thank you for visiting my hair page! I can not wait to provide excellent services to you! You can access all the services I provide using the Service link above. You can book by creating an account or you can book as a guest. I look forward to seeing you!</p>
-        </div>
-        <div class="col-5 ms-5">
-            <div class="row justify-content-between">
-                <div class="col-6">
-                    <h3 class="fw-lighter mb-4 text-success ms-5" id="reviews">Reviews:</h3>
-                </div>
-                <div class="col-6">
-                    <button type="button" class="btn btn-outline-success ms-5">SUBMIT A REVIEW</button>
+<div class="container">
+    <div class="row justify-content-center">
+        <div class="col-3">
+            <div class="row ">
+                <p id=""><strong>Thank you once again for selecting KlassyBraids as your preferred choice. To make your booking more convenient for you, I offer two alternatives to considering while booking: (Please understand that if you choose to move forward with the following instructions I will reach out to you for a down payment of $25 to officially confirm your booking)</strong>
+
+                </br></br><strong>Opt-Out of Credit Card Fee:</strong> Should you wish to bypass the credit card fee, kindly follow the instructions below.
+                </br></br><strong>Delayed Payment Option:</strong> If you prefer to NOT pay the complete amount at the time of booking, please follow the instructions below.
+            </br></br>I appreciate your cooperation and look forward to serving you!</br></br><strong>Instructions:</strong>
+                </br>1. Choose the service you would like to book
+            </br>2. Choose the date and time
+        </br>3. Log in or click "Skip the log in process"
+    </br>4. Enter your information </br>5. You will be directed to the screen that ask for your payment, screen all the way down and click "Skip & Book" </br></br>   </p>
+            </div>
+            <a class="btn text-bold text-success btn-outline-success bg-success-subtle p-1 fw-bold  mb-4 nav-link w-50 me-4 mt-3 text-success fw-bold" id="forminput" href="https://mickel.setmore.com">BOOK NOW</a>
+            <div class="row">
+                <h1 class="text-dark fw-lighter fs-1 mt-4 mb-3" id="services">Reviews:</h1>
+            </div>
+            <div class="row">
+                {% for review in reviews %}
+                    <div class="card border-0 ">
+                        <div class="card-body">
+                            <h5 class="card-title"></h5>
+                            <p class="card-text text-start fs-5  fst-italic fw-lighter ">" {{ review.review }} "</p>
+                        </div>
+                    </div>
+                {% endfor %}
+            </div>
+
+            <div class="row">
+                <div class="row justify-content-center">
+                    <br><a href="/review" type="button" class=" w-75 btn bg-success-subtle fw-bold border-success text-success mt-4 ", id="forminput">SUBMIT A REVIEW</a>
                 </div>
             </div>
-            <div class="card border border border-success-subtle">
-                <div class="card-body">
-                <h5 class="card-title"></h5>
-                <p class="card-text text-center fs-5 p-3 fw-lighter ">The services were amazing! 10 / 10 recommend!</p>
+        </div>
+        <div class="col-8">
+            <div class="row  justify-content-end">
+                <div class="card m-2 border-0" style="width:11rem;">
+                    <img src="{{ url_for('static', filename='/images/hair1.jpg') }}" class="{{ url_for('static', filename='/images/hair1.jpg') }}" alt="hairphoto">
+                </div>
+                <div class="card m-2 border-0" style="width: 11rem;">
+                    <img src="{{ url_for('static', filename='/images/hair2.jpg') }}" class="card-img-top" alt="...">
+                </div>
+                <div class="card m-2 border-0" style="width: 11rem;">
+                    <img src="{{ url_for('static', filename='/images/hair3.jpg') }}" class="card-img-top" alt="...">
+                </div>
+                <div class="card m-2 border-0" style="width: 11rem;">
+                    <img src="{{ url_for('static', filename='/images/hair4.jpg') }}" class="card-img-top" alt="...">
+                </div>
+
+            </div>
+            <div class="row justify-content-end">
+                <div class="card m-2 border-0" style="width: 11rem;">
+                    <img src="{{ url_for('static', filename='/images/hair10.jpg') }}" class="{{ url_for('static', filename='/images/hair1.jpg') }}" alt="hairphoto">
+                </div>
+                <div class="card m-2 border-0" style="width: 11rem;">
+                    <img src="{{ url_for('static', filename='/images/hair6.jpg') }}" class="card-img-top" alt="...">
+                </div>
+                <div class="card m-2 border-0" style="width: 11rem;">
+                    <img src="{{ url_for('static', filename='/images/hair12.jpg') }}" class="card-img-top" alt="...">
+                </div>
+                <div class="card m-2 border-0" style="width: 11rem;">
+                    <img src="{{ url_for('static', filename='/images/hair8.jpg') }}" class="card-img-top" alt="...">
+                </div>
+            </div>
+            <div class="row justify-content-end">
+
+                <div class="card m-2 border-0" style="width: 11rem;">
+                    <img src="{{ url_for('static', filename='/images/hair9.jpg') }}" class="card-img-top" alt="...">
+                </div>
+                <div class="card m-2 border-0" style="width: 11rem;">
+                    <img src="{{ url_for('static', filename='/images/hair5.jpg') }}" class="card-img-top" alt="...">
+                </div>
+                <div class="card m-2 border-0" style="width: 11rem;">
+                    <img src="{{ url_for('static', filename='/images/hair7.jpg') }}" class="{{ url_for('static', filename='/images/hair1.jpg') }}" alt="hairphoto">
+                </div>
+                <div class="card m-2 border-0" style="width: 11rem;">
+                    <img src="{{ url_for('static', filename='/images/hair13.jpg') }}" class="card-img-top" alt="...">
                 </div>
             </div>
         </div>
     </div>
+
+</div>
+
+
 {% endblock %}

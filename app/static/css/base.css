@@ -1,15 +1,31 @@
 #header-title{
-    font-family: 'Yesteryear';
+    font-family: 'Dancing Script', sans-serif;
 }
 
 #reviews{
-    font-family: 'Yesteryear';
+    font-family: 'Dancing Script', sans-serif;
 }
 
 #services{
-    font-family: 'Yesteryear';
+    font-family: 'Dancing Script', sans-serif;
+}
+
+#alerts{
+    font-family: 'Montserrat';
+}
+
+#forminput{
+    font-family: 'Montserrat';
 }
 
 #table{
     width: 1000px;
+}
+
+#insta{
+    width: 75px;
+}
+
+#instabutton{
+    width:80px;
 }

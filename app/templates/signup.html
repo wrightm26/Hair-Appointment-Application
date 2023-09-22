@@ -3,39 +3,42 @@
 {% block title %} Sign Up {% endblock %}
 
 {% block header %}
-    <h1 class="text-success fw-lighter fs-1  pb-3" id="services"> Join My Clientele</h1>
-    <h5 class="text-success fw-lighter fs-5 "> Sign Up</h5>
+    <h1 class="text-dark  fs-1  pb-3" id="services"> Join My Clientele</h1>
+    <h5 class="text-dark fw-bold fs-5 pb-5 border-bottom border-success-subtle" id="forminput"> Sign Up</h5>
 {% endblock %}
 
 {% block content %}
     <div class="row justify-content-center">
         <div class="col-6">
-            <div class="card mb-5 border border-success-subtle p-5">
+            <div class="card mb-5 border border-light">
                 <div class="card-body">
                     <form action="" method="post">
                         {{ form.csrf_token }}
-                        <div class="row">
-                            <h6 class="mb-4 text-center text-success fw-lighter" >Already have an account? <a class="text-secondary fw-lighter " href="/login">Log In</a></h6>
-                            {{ form.full_name.label (class="text-success fw-lighter") }}
-                            {{ form.full_name(class="form-control border border-success-subtle mb-3") }}
+                            <div class="row">
+                                <h6 class="mb-4 text-center text-success fw-bold" id="forminput">Already have an account? <a class="text-secondary fw-bold " id="forminput" href="/login">Log In</a></h6>
+                                {{ form.first_name.label (class="text-success fw-bold", id="forminput") }}
+                                {{ form.first_name(class="form-control border border-success-subtle mb-3") }}
 
-                            {{ form.username.label (class="text-success fw-lighter") }}
-                            {{ form.username(class="form-control border border-success-subtle mb-3") }}
+                                {{ form.last_name.label (class="text-success fw-bold", id="forminput") }}
+                                {{ form.last_name(class="form-control border border-success-subtle mb-3") }}
 
-                            {{ form.number.label (class="text-success fw-lighter") }}
-                            {{ form.number(class="form-control border border-success-subtle mb-3", placeholder="000-000-0000") }}
+                                {{ form.username.label (class="text-success fw-bold", id="forminput") }}
+                                {{ form.username(class="form-control border border-success-subtle mb-3") }}
 
-                            {{ form.email.label (class="text-success fw-lighter") }}
-                            {{ form.email(class="form-control border border-success-subtle mb-3") }}
+                                {{ form.number.label (class="text-success fw-bold", id="forminput") }}
+                                {{ form.number(class="form-control border border-success-subtle mb-3", placeholder="000-000-0000") }}
 
-                            {{ form.password.label (class="text-success fw-lighter") }}
-                            {{ form.password(class="form-control border border-success-subtle mb-3") }}
+                                {{ form.email.label (class="text-success fw-bold", id="forminput") }}
+                                {{ form.email(class="form-control border border-success-subtle mb-3") }}
 
-                            {{ form.confirm_password.label (class="text-success fw-lighter") }}
-                            {{ form.confirm_password(class="form-control border border-success-subtle mb-3") }}
+                                {{ form.password.label (class="text-success fw-bold", id="forminput") }}
+                                {{ form.password(class="form-control border border-success-subtle mb-3") }}
 
+                                {{ form.confirm_password.label (class="text-success fw-bold", id="forminput") }}
+                                {{ form.confirm_password(class="form-control border border-success-subtle mb-3") }}
+                            </div>
                             <div class="row justify-content-center">
-                                {{ form.submit(class="btn btn-success w-50 m-3 p-3 justify-content-center") }}
+                                {{ form.submit(class="btn btn-success w-50 m-3 p-3 justify-content-center", id="forminput") }}
                             </div>
                     </form>
                 </div>

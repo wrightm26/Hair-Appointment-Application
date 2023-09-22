@@ -3,8 +3,61 @@
 {% block title %} Gallery {% endblock %}
 
 {% block header %}
-    <h1 class="text-success fw-lighter fs-1 border-bottom border-4 border-success-subtle pb-5" id="services">Gallery</h1>
+    <h1 class="text-dark fw-lighter fs-1 border-bottom border-1 border-success-subtle pb-5" id="services">Gallery</h1>
 {% endblock %}
 
 {% block content %}
+<div class="container justify-content-center">
+    <div class="row">
+        <div class="card m-2 border-0" style="width: 18rem;">
+            <img src="{{ url_for('static', filename='/images/hair11.jpg') }}" class="{{ url_for('static', filename='/images/hair1.jpg') }}" alt="hairphoto">
+        </div>
+        <div class="card m-2 border-0" style="width: 18rem;">
+            <img src="{{ url_for('static', filename='/images/hair2.jpg') }}" class="card-img-top" alt="...">
+        </div>
+        <div class="card m-2 border-0" style="width: 18rem;">
+            <img src="{{ url_for('static', filename='/images/hair3.jpg') }}" class="card-img-top" alt="...">
+        </div>
+        <div class="card m-2 border-0" style="width: 18rem;">
+            <img src="{{ url_for('static', filename='/images/hair4.jpg') }}" class="card-img-top" alt="...">
+        </div>
+    </div>
+    <div class="row">
+        <div class="card m-2 border-0" style="width: 18rem;">
+            <img src="{{ url_for('static', filename='/images/hair10.jpg') }}" class="{{ url_for('static', filename='/images/hair1.jpg') }}" alt="hairphoto">
+        </div>
+        <div class="card m-2 border-0" style="width: 18rem;">
+            <img src="{{ url_for('static', filename='/images/hair6.jpg') }}" class="card-img-top" alt="...">
+        </div>
+        <div class="card m-2 border-0" style="width: 18rem;">
+            <img src="{{ url_for('static', filename='/images/hair12.jpg') }}" class="card-img-top" alt="...">
+        </div>
+        <div class="card m-2 border-0" style="width: 18rem;">
+            <img src="{{ url_for('static', filename='/images/hair8.jpg') }}" class="card-img-top" alt="...">
+        </div>
+    </div>
+    <div class="row">
+        <div class="card m-2 border-0" style="width: 18rem;">
+            <img src="{{ url_for('static', filename='/images/hair1.jpg') }}" class="{{ url_for('static', filename='/images/hair1.jpg') }}" alt="hairphoto">
+        </div>
+        <div class="card m-2 border-0" style="width: 18rem;">
+            <img src="{{ url_for('static', filename='/images/hair9.jpg') }}" class="card-img-top" alt="...">
+        </div>
+        <div class="card m-2 border-0" style="width: 18rem;">
+            <img src="{{ url_for('static', filename='/images/hair5.jpg') }}" class="card-img-top" alt="...">
+        </div>
+       <div class="card m-2 border-0" style="width: 18rem;">
+            <img src="{{ url_for('static', filename='/images/hair7.jpg') }}" class="{{ url_for('static', filename='/images/hair1.jpg') }}" alt="hairphoto">
+        </div>
+    </div>
+    <div class="row">
+
+        <div class="card m-2 border-0" style="width: 18rem;">
+            <img src="{{ url_for('static', filename='/images/hair13.jpg') }}" class="card-img-top" alt="...">
+        </div>
+
+    </div>
+
+</div>
+
 {% endblock %}

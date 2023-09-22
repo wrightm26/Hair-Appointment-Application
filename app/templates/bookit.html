@@ -1,0 +1,32 @@
+{% extends 'base.html' %}
+
+{% block title %} Log In {% endblock %}
+
+{% block header %}
+    <h1 class="text-dark fs-1  pb-3" id="services">Let's Make it Official!</h1>
+
+{% endblock %}
+
+{% block content %}
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-5">
+                <div class="card mb-5 border border-0">
+                    <div class="card-body ">
+                        <form action="" method="post">
+                            <h3 class="mb-4 text-center text-success fw-bold" id="forminput" >Guest Booking</h3>
+                            
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-5">
+                <td class="pt-4 "><a class="m-4 btn btn-outline-success bg-success p-2 fw-bold  nav-link  text-light fw-bold" id="forminput" href="/login">Log In</a></td>
+                <td class="pt-4 "><a class="m-4 btn btn-outline-success bg-success p-2 fw-bold  nav-link  text-light fw-bold" id="forminput" href="/signup">Sign Up</a></td>
+
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}

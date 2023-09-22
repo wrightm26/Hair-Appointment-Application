@@ -4,28 +4,28 @@
 {% block title %} Log In {% endblock %}
 
 {% block header %}
-    <h1 class="text-success fw-lighter fs-1  pb-3" id="services">Welcome Back</h1>
-    <h5 class="text-success fw-lighter fs-5 border-bottom border-success-subtle pb-5"> Log In</h5>
+    <h1 class="text-dark fs-1  pb-3" id="services">Welcome Back</h1>
+    <h5 class="text-dark fw-bold fs-5 border-bottom border-success-subtle pb-5 ms-5 me-5" id="forminput"> Log In</h5>
 {% endblock %}
 
 {% block content %}
     <div class="row justify-content-center">
         <div class="col-6">
-            <div class="card mb-5 border border-success-subtle p-5">
+            <div class="card mb-5 border border-light">
                 <div class="card-body">
                     <form action="" method="post">
                         {{ form.csrf_token }}
                         <div class="row">
-                            <h6 class="mb-4 text-center text-success fw-lighter">Don't have an account? <a class="text-secondary fw-lighter " href="/signup">Register</a></h6>
+                            <h6 class="mb-4 text-center text-success fw-bold" id="forminput">Don't have an account? <a class="text-secondary fw-bold" href="/signup" id="forminput">Register</a></h6>
 
-                            {{ form.username.label (class="text-success fw-lighter") }}
+                            {{ form.username.label (class="text-success fw-bold", id="forminput") }}
                             {{ form.username(class="form-control border border-success-subtle mb-3") }}
 
-                            {{ form.password.label (class="text-success fw-lighter") }}
+                            {{ form.password.label (class="text-success fw-bold", id="forminput") }}
                             {{ form.password(class="form-control border border-success-subtle mb-3") }}
 
                             <div class="row justify-content-center">
-                                {{ form.submit(class="btn btn-success w-50 m-3 p-3 justify-content-center") }}
+                                {{ form.submit(class="btn btn-success w-50 m-3 p-3 justify-content-center", id="forminput") }}
                             </div>
                     </form>
                 </div>
